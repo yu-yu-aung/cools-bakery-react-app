@@ -1,6 +1,6 @@
 import React from 'react'
-import ProductCard from './ProductCard'
 import ProductHeader from './ProductHeader'
+import ProductCardList from './ProductCardList'
 
 const ProductContainer = () => {
   return (
@@ -8,8 +8,8 @@ const ProductContainer = () => {
     <div className='flex justify-between py-2 px-3'>
       <ProductHeader/>
     </div>
-    <div>
-      <ProductCard/>
+    <div className='overflow-scroll h-[900px]'>
+      <ProductCardList/>
     </div>
     </>
   )

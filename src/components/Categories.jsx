@@ -12,10 +12,10 @@ const Categories = () => {
   ];
 
   return (
-    <div >
+    <div className='flex flex-col gap-5 items-end pr-3 pl-5'>
     {
       categories.map((el) => 
-        <CategoryBtn/>
+        <CategoryBtn category={el} key={el.id}/>
       )
     }
       

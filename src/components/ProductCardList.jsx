@@ -129,9 +129,9 @@ const ProductCardList = () => {
 ];
 
   return (
-    <div>
+    <div className='grid grid-cols-3 gap-5 px-3 py-2'>
       {products.map((el) => 
-        <ProductCard key={el.id}/>
+        <ProductCard product={el} key={el.id}/>
         )}
     </div>
   )
