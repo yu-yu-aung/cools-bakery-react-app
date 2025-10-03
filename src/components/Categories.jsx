@@ -1,6 +1,7 @@
 import React from 'react'
 import CategoryBtn from './CategoryBtn'
 
+
 const Categories = () => {
 
   const categories = [
@@ -20,6 +21,8 @@ const Categories = () => {
     }
       
     </div>
+    
+
   )
 }
 
