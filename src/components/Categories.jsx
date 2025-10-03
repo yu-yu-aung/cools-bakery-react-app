@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CategoryBtn from './CategoryBtn'
 
 
@@ -12,11 +12,18 @@ const Categories = () => {
   { id: 4, title: "Smoothie" },
   ];
 
+  const [activeCategoryId, setActiveCategoryId] = useState(0);
+
   return (
     <div className='flex flex-col gap-5 items-end pr-3 pl-5'>
     {
       categories.map((el) => 
-        <CategoryBtn category={el} key={el.id}/>
+        <CategoryBtn 
+          activeCategoryId = {activeCategoryId} 
+          setActiveCategoryId = {setActiveCategoryId}
+          category={el} 
+          key={el.id}
+        />
       )
     }
       
